@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(min-width:280px){
+            
+            *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        body{
+            margin:0;
+            
+        }
+        
+        input{
+             height: 40px;
+            width:100%;
+            border:3px solid black;
+        }
+        h3{
+            text-align: center;
+            
+        }
+        .foot{
+            width: 50%;
+            margin: 0 25%;
+        }
+        .btn{
+            width:50%;
+        }
+        .btn button{
+            color:aliceblue;
+            border:none;
+            background-color: chartreuse;
+            width: 100%;
+            margin-top: 10%;
+            height: 50px;
+        }
+        select{
+            height: 40px;
+            width:50%;
+            border:3px solid black;
+        }
+        span{
+            color: red;
+        }
+        textarea{
+            height: 50px;
+            width:50%;
+            border:3px solid black;
+        }
+        #demo{
+            color: red;
+        }
+        nav{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 2% 1%;
+}
+form button{
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 34%;
+}
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/signup">Sign up</a>
+        <a href="/login">Login</a>
+        <form action="/logout" method="POST">
+            <button>logout</button>
+        </form>
+    </nav>
+    <h3>Sign up page</h3>
+    <div class="foot">
+   <form action="/signin" method="POST">
+        <p><span>*</span>Full Name</p>
+        <input type="text"  class="user-field" name="uname"  required>
+       
+        <p><span>*</span>E-MAIL Address</p>
+        <input type="email"  class="user-field" name="umail"  required>
+        <p><span>*</span>Confirm E-mail</p>
+        <input type="text" class="user-field" name="cmail"  required>
+        <p><span>*</span>Password</p>
+        <input type="password" class="user-field" name="ucode"  required>
+       
+        <div class="btn">
+            <button>Sign up</button>
+            <a href="/login">Login instead</a>
+        </div>
+    </form>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        form button{
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 34%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 2% 1%;
+}
+
+h1, p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/signup">Sign up</a>
+        <a href="/login">Login</a>
+        <a href="/adminPage">Admin</a>
+        <form action="/logout" method="POST">
+            <button>Logout</button>
+        </form>
+    </nav>
+    <h1>Admin page</h1>
+    <p>You should only get here if you are authenticated</p>
+    <p>You can create or do tasks that isn't available to all.</p>
+</body>
+</html>
